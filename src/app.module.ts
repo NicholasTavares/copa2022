@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { TeamsModule } from './teams/teams.module';
 import { PlayersModule } from './players/players.module';
 import { GroupsModule } from './groups/groups.module';
@@ -31,7 +29,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     RedCardsModule,
     YellowCardsModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
